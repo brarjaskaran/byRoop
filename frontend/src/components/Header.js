@@ -1,6 +1,7 @@
 import React from "react";
 import { LinkContainer } from "react-router-bootstrap";
-import { Nav, Navbar, Container } from "react-bootstrap";
+import { Nav, Navbar, Container, Image } from "react-bootstrap";
+import logo from "../images/logo.svg";
 
 function Header() {
   return (
@@ -8,7 +9,8 @@ function Header() {
       <Navbar bg="dark" variant="dark" expand="lg" collapseOnSelect>
         <Container>
           <LinkContainer to="/">
-            <Navbar.Brand>React-Bootstrap</Navbar.Brand>
+            <Image src={logo} fluid rounded></Image>
+            {/* <Navbar.Brand>BY ROOP</Navbar.Brand> */}
           </LinkContainer>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
